@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <title>Website</title>
+        <link rel="stylesheet" href="websiteregis.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">FORM REGISTRASI</div>
+            <nav>
+                <ul>
+                    <li><a href="#" onclick="pesan('Beranda')">Beranda</a></li>
+                    <li><a href="#" onclick="pesan('About')">About</a></li>
+                    <li><a href="#" onclick="pesan('Contact')">Contact</a></li>
+                    <li><a href="regis.html">Registrasi</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <h1>Selamat Datang</h1>
+            <p>Silakan login atau registrasi terlebih dahulu</p>
+            <button onclick="salam()">Klik Saya</button>
+            <br><br>
+            <div class="container-gambar">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToZ2vagfsT2318u8NAr2McDSFkty66dNVUPKTDKSsyRA&s" class="gambar">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0kKl0NmjAlCFQm7Sddd9o2WAfJBo41Td28A&s" class="gambar">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSLhrl55FCT4foFd2E_Uv3Lk6QSVQGjMh_Kg&s" class="gambar">
+            </div>
+        </section>
+        <footer>
+            Copyright © ALYA 1 TI.F 2026
+        </footer>
+        <script>
+        function salam() {
+            alert("Selamat datang di website!");
+        }
+        function pesan(menu) {
+            alert("Anda memilih menu " + menu);
+        }
+        </script>
+    </body>
+</html>

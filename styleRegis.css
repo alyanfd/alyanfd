@@ -1,0 +1,107 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #00c9ff, #92fe9d);
+    margin: 0;
+    padding: 20px;
+}
+.judul {
+    text-align: center;
+    color: white;
+    font-size: 28px;
+    margin-bottom: 20px;
+    padding: 15px;
+    background: linear-gradient(135deg, #00c9ff, #00b894);
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    animation: warna 5s infinite;
+}
+@keyframes warna {
+    0% {color: white;}
+    25% {color: #000000;}
+    50% {color: #00b6bf;}
+    75% {color: #81ecec;}
+    100% {color: rgb(150, 150, 150);}
+}
+.form-box {
+    background-color: #ffffff;
+    width: 350px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    animation: muncul 1s ease;
+}
+@keyframes muncul {
+    from {
+        opacity: 0;
+        transform: translateY(80px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    transition: 0.3s;
+}
+input:focus {
+    outline: none;
+    border-color: #00c9ff;
+    box-shadow: 0 0 5px #00c9ff;
+    transform: scale(1.03);
+}
+
+input:hover {
+    background-color: #f1fefe;
+}
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.radio-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+input[type="radio"] {
+    width: auto;
+    transform: scale(1.2);
+}
+.btn {
+    width: 100%;
+    background-color: #00c9ff;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    animation: tombol 1.5s infinite;
+}
+.btn-reset {
+    width: 100%;
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn-reset:hover {
+    transform: scale(1.1);
+    background-color: black;
+}
+@keyframes tombol {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.08);}
+    100% {transform: scale(1);}
+}
