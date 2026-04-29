@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <title>Login</title>
+        <link rel="stylesheet" href="website.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">Website Saya</div>
+            <nav>
+                <ul>
+                    <li><a href="9Index.html">Index</a></li>
+                    <li><a href="#" onclick="cekLoginMenu()">Menu</a></li>
+                    <li><a href="#" onclick="pesanAbout()">About</a></li>
+                    <li><a href="#" onclick="pesanContact()">Contact</a></li>
+                    <li><a href="9login.html">Login</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <h1>Login</h1>
+            <p>Username:</p>
+            <input type="text" id="user">
+            <p>Password:</p>
+            <input type="password" id="pass">
+            <br><br>
+            <button onclick="login()">Login</button>
+            <p id="hasil"></p>
+        </section>
+        <footer>
+            Copyright © 2026 TIF
+        </footer>
+        <script src="website.js"></script>
+        <script>
+            function login() {
+                let user = document.getElementById("user").value;
+                let pass = document.getElementById("pass").value;
+                if (user === "admin" && pass === "123") {
+                    alert("Login berhasil!");
+                    localStorage.setItem("login", "true");
+                    window.location.href = "9Menu.html";
+                } else {
+                    document.getElementById("hasil").innerHTML = "Login gagal!";
+                }
+            }
+         </script>
+    </body>
+</html>
